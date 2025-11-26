@@ -9,7 +9,7 @@ public class Cajera implements Runnable {
 
     @Override
     public void run() {
-        System.out.println(nombre + " empieza con " + cliente.getNombre());
+        System.out.println(nombre + " empieza cargando productos del cliente " + cliente.getNombre());
         int total = 0;
 
         for(Producto p : cliente.getProductos()){
