@@ -1,6 +1,6 @@
 public class Cajera implements Runnable {
-    private String nombre;
-    private Cliente cliente;
+    private final String nombre;
+    private final Cliente cliente;
 
     public Cajera(String nombre, Cliente cliente){
         this.nombre = nombre;
