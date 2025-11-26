@@ -15,7 +15,7 @@ public class Cajera implements Runnable {
         for(Producto p : cliente.getProductos()){
             try {
                 System.out.println(nombre + " procesando: " + p.getNombre());
-                Thread.sleep(p.getTiempo() * 1000);
+                Thread.sleep(p.getTiempo() * 1000L);
                 total += p.getTiempo();
             } catch (Exception e) {
                 e.printStackTrace();
